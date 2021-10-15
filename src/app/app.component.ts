@@ -6,4 +6,4 @@ import { Component, HostBinding } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-@HostBinding() class = 'app-root';}
+@HostBinding() class = 'app-root'; }
