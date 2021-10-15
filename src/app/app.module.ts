@@ -1,3 +1,5 @@
+import { AppHeaderModule } from './shared/header/header.module';
+import { AppFooterModule } from './shared/footer/footer.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -8,8 +10,10 @@ import { AppComponent } from './app.component';
     AppComponent,
   ],
   imports: [
+    AppHeaderModule,
+    AppFooterModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
