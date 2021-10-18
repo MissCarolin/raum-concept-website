@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  // encapsulation: ViewEncapsulation.None
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  constructor() { }
+ slides = [
+      {image: 'https://picsum.photos/600/800'},
+      {image: 'https://picsum.photos/600/800'},
+      {image: 'https://picsum.photos/600/800'},
+      {image: 'https://picsum.photos/600/800'},
+      {image: 'https://picsum.photos/600/800'}
+    ];
 
-  ngOnInit(): void {
-  }
 
 }
