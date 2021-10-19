@@ -17,18 +17,8 @@ body {
 //     margin: 0
 // }‚
 // Media Queries for global stuff from Material Library
-@media screen and (min-width:1600px) {
+@media screen and (min-width:1800px) {
     .carousel {
-        position: absolute !important;
-        bottom: 0;
-        max-width: 550px !important;
-    }
-}
-
-@media screen and (min-width:1700px) {
-    .carousel {
-        position: absolute !important;
-        bottom: 0;
         max-width: 600px !important;
     }
 }

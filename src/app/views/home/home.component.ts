@@ -6,7 +6,6 @@ import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  // encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent {
 
