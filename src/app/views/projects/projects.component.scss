@@ -1,0 +1,183 @@
+            .app-projects {
+                &_container {
+                    position: relative;
+                    width: 93%;
+                    margin: 0 auto;
+                    max-width: 1430px;
+                    min-height: 93vh;
+                }
+                &_content-wrap {
+                    height: 855px;
+                    ;
+                }
+                &_headline {
+                    font-size: 23px;
+                    position: absolute;
+                    right: 22%;
+                    top: 12%;
+                }
+                &_description-box-1 {
+                    font-size: 14px;
+                    max-width: 150px;
+                    position: absolute;
+                    top: 297px;
+                    left: 6%;
+                }
+                &_description-box-headline {
+                    font-size: 14px;
+                    font-weight: lighter;
+                    margin-bottom: 0px;
+                }
+                &_description-box-description {
+                    font-weight: lighter;
+                    margin-top: 10px;
+                }
+                &_image-project1-1 {
+                    position: absolute;
+                    width: 291px;
+                    left: 85px;
+                    top: 465px;
+                }
+                &_image-project1-2 {
+                    position: absolute;
+                    width: 267px;
+                    top: 304px;
+                    left: 469px;
+                }
+                &_image-project1-3 {
+                    position: absolute;
+                    width: 267px;
+                    left: 469px;
+                    top: 688px;
+                }
+                &_image-project1-4 {
+                    position: absolute;
+                    width: 499px;
+                    top: 302px;
+                    right: 84px;
+                }
+                &_seperation-line-1 {
+                    position: absolute;
+                    border-bottom: 1px solid white;
+                    width: 528px;
+                    top: 1160px;
+                    left: 6%;
+                }
+                &_image-project2-1 {
+                    position: absolute;
+                    width: 566px;
+                    left: 685px;
+                    top: 1525px;
+                }
+                &_image-project2-2 {
+                    position: absolute;
+                    width: 369px;
+                    top: 1264px;
+                    left: 208px;
+                }
+                &_description-box-2 {
+                    position: absolute;
+                    top: 1248px;
+                    font-weight: lighter;
+                    width: 150px;
+                    left: 681px;
+                }
+                &_seperation-line-2 {
+                    position: absolute;
+                    border-bottom: 1px solid white;
+                    width: 528px;
+                    top: 2091px;
+                    ;
+                    left: 6%;
+                }
+                &_image-project3-1 {
+                    position: absolute;
+                    width: 500px;
+                    left: 457px;
+                    top: 2464px;
+                }
+                &_image-project3-2 {
+                    position: absolute;
+                    width: 300px;
+                    top: 2183px;
+                    left: 6%;
+                }
+                &_image-project3-3 {
+                    position: absolute;
+                    width: 300px;
+                    top: 2183px;
+                    right: 84px;
+                }
+                &_description-box-3 {
+                    position: absolute;
+                    top: 2164px;
+                    font-weight: lighter;
+                    width: 150px;
+                    left: 637px;
+                }
+                &_seperation-line-3 {
+                    position: absolute;
+                    border-bottom: 1px solid white;
+                    width: 528px;
+                    top: 2917px;
+                    left: 6%;
+                }
+                &_image-project4-1 {
+                    position: absolute;
+                    width: 350px;
+                    top: 3023px;
+                    right: 531px;
+                }
+                &_image-project4-2 {
+                    position: absolute;
+                    width: 361px;
+                    top: 3023px;
+                    left: 6%;
+                }
+                &_image-project4-3 {
+                    position: absolute;
+                    width: 368px;
+                    top: 3279px;
+                    right: 84px;
+                }
+                &_description-box-4 {
+                    position: absolute;
+                    top: 3002px;
+                    font-weight: lighter;
+                    width: 150px;
+                    left: 958px;
+                }
+                &_seperation-line-4 {
+                    position: absolute;
+                    border-bottom: 1px solid white;
+                    width: 528px;
+                    top: 3814px;
+                    left: 6%;
+                }
+                &_image-project5-1 {
+                    position: absolute;
+                    width: 448px;
+                    top: 3922px;
+                    left: 757px;
+                }
+                &_image-project5-2 {
+                    position: absolute;
+                    width: 413px;
+                    top: 4131px;
+                    left: 230px;
+                }
+                &_description-box-5 {
+                    position: absolute;
+                    top: 3915px;
+                    font-weight: lighter;
+                    width: 150px;
+                    left: 228px;
+                }
+                &_seperation-line-5 {
+                    position: absolute;
+                    border-bottom: 1px solid white;
+                    width: 528px;
+                    top: 4612px;
+                    left: 6%;
+                }
+            }
