@@ -14,7 +14,7 @@ import { AppFooterModule } from 'src/app/shared/footer/footer.module';
 @NgModule({
   declarations: [HomeComponent],
   exports: [HomeComponent],
-  imports: [AppHeaderModule, CommonModule, AppHomeRoutingModule, MatButtonModule, MatIconModule,
+  imports: [AppHeaderModule, AppFooterModule, CommonModule, AppHomeRoutingModule, MatButtonModule, MatIconModule,
   MatCarouselModule.forRoot()]
 })
 export class AppHomeModule { }

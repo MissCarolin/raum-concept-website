@@ -1,0 +1,32 @@
+        .app-footer {
+            &_container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 25px
+            }
+            &_content {
+                display: flex;
+            }
+            &_navigation-items {
+                margin-right: 25px;
+                font-size: 14px;
+                text-decoration: none;
+                &:hover,
+                &:active {
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid white;
+                }
+            }
+            &_copyright-section {
+                display: flex;
+                align-items: center;
+            }
+            &_copyright-text {
+                padding-left: 10px;
+                font-size: 14px;
+            }
+            &_copyright-icon {
+                font-size: 20px
+            }
+        }

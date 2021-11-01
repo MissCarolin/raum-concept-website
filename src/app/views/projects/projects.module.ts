@@ -1,3 +1,4 @@
+import { AppFooterModule } from './../../shared/footer/footer.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectsComponent } from './projects.component';
@@ -9,6 +10,6 @@ import { AppHeaderModule } from 'src/app/shared/header/header.module';
 @NgModule({
   declarations: [ProjectsComponent],
   exports: [ProjectsComponent],
-  imports: [AppHeaderModule, CommonModule, AppProjectsRoutingModule]
+  imports: [AppHeaderModule, AppFooterModule, CommonModule, AppProjectsRoutingModule]
 })
 export class AppProjectsModule { }
