@@ -12,8 +12,8 @@
                 &_headline {
                     font-size: 23px;
                     position: absolute;
-                    right: 22%;
-                    top: 12%;
+                    right: 318px;
+                    top: 109px;
                 }
                 &_description-box-1 {
                     font-size: 14px;
@@ -61,18 +61,52 @@
                     width: 528px;
                     top: 1160px;
                     left: 6%;
+                    opacity: 0;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        position: absolute;
+                        border-bottom: 1px solid white;
+                        width: 528px;
+                        top: 1160px;
+                        opacity: 1;
+                        left: 6%;
+                        transform: translateX(0)
+                    }
                 }
                 &_image-project2-1 {
                     position: absolute;
                     width: 566px;
                     left: 685px;
                     top: 1525px;
+                    opacity: 0;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        position: absolute;
+                        opacity: 1;
+                        width: 566px;
+                        left: 685px;
+                        top: 1525px;
+                        transform: translateX(0)
+                    }
                 }
                 &_image-project2-2 {
                     position: absolute;
                     width: 369px;
                     top: 1264px;
                     left: 208px;
+                    opacity: 0;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        position: absolute;
+                        opacity: 1;
+                        width: 369px;
+                        top: 1264px;
+                        left: 208px;
+                        transform: translateX(0)
+                    }
                 }
                 &_description-box-2 {
                     position: absolute;
@@ -80,103 +114,286 @@
                     font-weight: lighter;
                     width: 150px;
                     left: 681px;
+                    transition: all 1.3s;
+                    opacity: 0;
+                    transform: translateX(-100%);
+                    &.active {
+                        position: absolute;
+                        top: 1248px;
+                        font-weight: lighter;
+                        width: 150px;
+                        left: 681px;
+                        opacity: 1;
+                        transform: translateX(0)
+                    }
                 }
                 &_seperation-line-2 {
                     position: absolute;
                     border-bottom: 1px solid white;
                     width: 528px;
                     top: 2091px;
-                    ;
                     left: 6%;
+                    opacity: 0;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        position: absolute;
+                        border-bottom: 1px solid white;
+                        width: 528px;
+                        top: 2091px;
+                        left: 6%;
+                        opacity: 1;
+                        transform: translateX(0)
+                    }
                 }
                 &_image-project3-1 {
+                    opacity: 0;
                     position: absolute;
                     width: 500px;
                     left: 457px;
                     top: 2464px;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        opacity: 1;
+                        position: absolute;
+                        width: 500px;
+                        left: 457px;
+                        top: 2464px;
+                        transform: translateX(0)
+                    }
                 }
                 &_image-project3-2 {
+                    opacity: 0;
                     position: absolute;
                     width: 300px;
                     top: 2183px;
                     left: 6%;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        opacity: 1;
+                        position: absolute;
+                        width: 300px;
+                        top: 2183px;
+                        left: 6%;
+                        transform: translateX(0)
+                    }
                 }
                 &_image-project3-3 {
+                    opacity: 0;
                     position: absolute;
                     width: 300px;
                     top: 2183px;
                     right: 84px;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        opacity: 1;
+                        position: absolute;
+                        width: 300px;
+                        top: 2183px;
+                        right: 84px;
+                        transform: translateX(0)
+                    }
                 }
                 &_description-box-3 {
+                    opacity: 0;
                     position: absolute;
                     top: 2164px;
                     font-weight: lighter;
                     width: 150px;
                     left: 637px;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        opacity: 1;
+                        position: absolute;
+                        top: 2164px;
+                        font-weight: lighter;
+                        width: 150px;
+                        left: 637px;
+                        transform: translateX(0)
+                    }
                 }
                 &_seperation-line-3 {
+                    opacity: 0;
                     position: absolute;
                     border-bottom: 1px solid white;
                     width: 528px;
                     top: 2917px;
                     left: 6%;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        opacity: 1;
+                        position: absolute;
+                        border-bottom: 1px solid white;
+                        width: 528px;
+                        top: 2917px;
+                        left: 6%;
+                        transform: translateX(0)
+                    }
                 }
                 &_image-project4-1 {
+                    opacity: 0;
                     position: absolute;
                     width: 350px;
                     top: 3023px;
                     right: 531px;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        opacity: 1;
+                        position: absolute;
+                        width: 350px;
+                        top: 3023px;
+                        right: 531px;
+                        transform: translateX(0)
+                    }
                 }
                 &_image-project4-2 {
+                    opacity: 0;
                     position: absolute;
                     width: 361px;
                     top: 3023px;
                     left: 6%;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        opacity: 1;
+                        position: absolute;
+                        width: 361px;
+                        top: 3023px;
+                        left: 6%;
+                        transform: translateX(0)
+                    }
                 }
                 &_image-project4-3 {
+                    opacity: 0;
                     position: absolute;
                     width: 368px;
                     top: 3279px;
                     right: 84px;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        opacity: 1;
+                        position: absolute;
+                        width: 368px;
+                        top: 3279px;
+                        right: 84px;
+                        transform: translateX(0)
+                    }
                 }
                 &_description-box-4 {
+                    opacity: 0;
                     position: absolute;
                     top: 3002px;
                     font-weight: lighter;
                     width: 150px;
                     left: 958px;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        opacity: 1;
+                        position: absolute;
+                        top: 3002px;
+                        font-weight: lighter;
+                        width: 150px;
+                        left: 958px;
+                        transform: translateX(0)
+                    }
                 }
                 &_seperation-line-4 {
+                    opacity: 0;
                     position: absolute;
                     border-bottom: 1px solid white;
                     width: 528px;
                     top: 3814px;
                     left: 6%;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        opacity: 1;
+                        position: absolute;
+                        border-bottom: 1px solid white;
+                        width: 528px;
+                        top: 3814px;
+                        left: 6%;
+                        transform: translateX(0)
+                    }
                 }
                 &_image-project5-1 {
+                    opacity: 0;
                     position: absolute;
                     width: 448px;
                     top: 3922px;
                     left: 757px;
+                    transition: all 1.3s;
+                    transform: translateX(-100%);
+                    &.active {
+                        opacity: 1;
+                        position: absolute;
+                        width: 448px;
+                        top: 3922px;
+                        left: 757px;
+                        transform: translateX(0)
+                    }
                 }
                 &_image-project5-2 {
+                    opacity: 0;
                     position: absolute;
                     width: 413px;
                     top: 4131px;
                     left: 230px;
+                    transition: all 1.3s;
+                    transform: translateX(-130%);
+                    &.active {
+                        opacity: 1;
+                        position: absolute;
+                        width: 413px;
+                        top: 4131px;
+                        left: 230px;
+                        transform: translateX(0)
+                    }
                 }
                 &_description-box-5 {
+                    opacity: 0;
                     position: absolute;
                     top: 3915px;
                     font-weight: lighter;
                     width: 150px;
                     left: 228px;
+                    transition: all 1.3s;
+                    transform: translateX(-130%);
+                    &.active {
+                        opacity: 1;
+                        position: absolute;
+                        top: 3915px;
+                        font-weight: lighter;
+                        width: 150px;
+                        left: 228px;
+                        transform: translateX(0)
+                    }
                 }
                 &_seperation-line-5 {
+                    opacity: 0;
                     position: absolute;
                     border-bottom: 1px solid white;
                     width: 528px;
                     top: 4612px;
                     left: 6%;
+                    transition: all 1.3s;
+                    transform: translateX(-130%);
+                    &.active {
+                        opacity: 1;
+                        position: absolute;
+                        border-bottom: 1px solid white;
+                        width: 528px;
+                        top: 4612px;
+                        left: 6%;
+                        transform: translateX(0)
+                    }
                 }
             }

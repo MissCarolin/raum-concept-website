@@ -1,65 +1,65 @@
 <div class="app-projects_container">
     <div class="app-projects_content-wrap">
         <app-header></app-header>
-        <h3 class="app-projects_headline">PROJEKTE</h3>
+        <h3 @EnterLeaveHeadline class="app-projects_headline">PROJEKTE</h3>
 
         <div class="app-project_project-1">
-            <div class="app-projects_description-box-1">
+            <div @EnterLeaveProject1 class="app-projects_description-box-1">
                 <h3 class="app-projects_description-box-headline">HEADLINE PROJEKT</h3>
                 <p class="app-projects_description-box-description">Description Project rem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
             </div>
-            <img class="app-projects_image-project1-1" [src]="'assets/images/bad1.jpg'" alt="bad">
-            <img class="app-projects_image-project1-2" [src]="'assets/images/bad2.jpg'" alt="bad">
-            <img class="app-projects_image-project1-3" [src]="'assets/images/bad3.jpg'" alt="bad">
-            <img class="app-projects_image-project1-4" [src]="'assets/images/bad4.jpg'" alt="bad">
+            <img @EnterLeaveProject1 class="app-projects_image-project1-1" [src]="'assets/images/bad1.jpg'" alt="bad">
+            <img @EnterLeaveProject1 class="app-projects_image-project1-2" [src]="'assets/images/bad2.jpg'" alt="bad">
+            <img @EnterLeaveProject1 class="app-projects_image-project1-3" [src]="'assets/images/bad3.jpg'" alt="bad">
+            <img @EnterLeaveProject1 class="app-projects_image-project1-4" [src]="'assets/images/bad4.jpg'" alt="bad">
         </div>
-        <div class="app-projects_seperation-line-1">
+        <div #slideElement class="app-projects_seperation-line-1">
         </div>
 
         <div class="app-project_project-2">
-            <div class="app-projects_description-box-2">
+            <div #slideElement class="app-projects_description-box-2">
                 <h3 class="app-projects_description-box-headline">HEADLINE PROJEKT</h3>
                 <p class="app-projects_description-box-description">Description Project rem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
             </div>
-            <img class="app-projects_image-project2-1" [src]="'assets/images/bad3-2.jpg'" alt="bad">
-            <img class="app-projects_image-project2-2" [src]="'assets/images/bad3-1.jpg'" alt="bad">
+            <img class="app-projects_image-project2-1" #slideElement [src]="'assets/images/bad3-2.jpg'" alt="bad">
+            <img #slideElement class="app-projects_image-project2-2" [src]="'assets/images/bad3-1.jpg'" alt="bad">
         </div>
-        <div class="app-projects_seperation-line-2">
+        <div #slideElement class="app-projects_seperation-line-2">
         </div>
 
         <div class="app-project_project-3">
-            <div class="app-projects_description-box-3">
+            <div #slideElement class="app-projects_description-box-3">
                 <h3 class="app-projects_description-box-headline">HEADLINE PROJEKT</h3>
                 <p class="app-projects_description-box-description">Description Project rem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
             </div>
-            <img class="app-projects_image-project3-1" [src]="'assets/images/bad2-3.jpg'" alt="bad">
-            <img class="app-projects_image-project3-2" [src]="'assets/images/bad2-2.jpg'" alt="bad">
-            <img class="app-projects_image-project3-3" [src]="'assets/images/bad2-1.jpg'" alt="bad">
+            <img #slideElement class="app-projects_image-project3-1" [src]="'assets/images/bad2-3.jpg'" alt="bad">
+            <img #slideElement class="app-projects_image-project3-2" [src]="'assets/images/bad2-2.jpg'" alt="bad">
+            <img #slideElement class="app-projects_image-project3-3" [src]="'assets/images/bad2-1.jpg'" alt="bad">
         </div>
-        <div class="app-projects_seperation-line-3">
+        <div #slideElement class="app-projects_seperation-line-3">
         </div>
 
         <div class="app-project_project-4">
-            <div class="app-projects_description-box-4">
+            <div #slideElement class="app-projects_description-box-4">
                 <h3 class="app-projects_description-box-headline">HEADLINE PROJEKT</h3>
                 <p class="app-projects_description-box-description">Description Project rem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
             </div>
-            <img class="app-projects_image-project4-1" [src]="'assets/images/floors1-1.jpg'" alt="kueche">
-            <img class="app-projects_image-project4-2" [src]="'assets/images/floors1-2.jpg'" alt="wohnzimmer">
-            <img class="app-projects_image-project4-3" [src]="'assets/images/floors1-3.jpg'" alt="wohnzimmer">
+            <img #slideElement class="app-projects_image-project4-1" [src]="'assets/images/floors1-1.jpg'" alt="kueche">
+            <img #slideElement class="app-projects_image-project4-2" [src]="'assets/images/floors1-2.jpg'" alt="wohnzimmer">
+            <img #slideElement class="app-projects_image-project4-3" [src]="'assets/images/floors1-3.jpg'" alt="wohnzimmer">
         </div>
-        <div class="app-projects_seperation-line-4">
+        <div #slideElement class="app-projects_seperation-line-4">
         </div>
 
         <div class="app-project_project-5">
-            <div class="app-projects_description-box-5">
+            <div #slideElement class="app-projects_description-box-5">
                 <h3 class="app-projects_description-box-headline">HEADLINE PROJEKT</h3>
                 <p class="app-projects_description-box-description">Description Project rem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
             </div>
-            <img class="app-projects_image-project5-1" [src]="'assets/images/floors2-2.jpg'" alt="kueche">
-            <img class="app-projects_image-project5-2" [src]="'assets/images/floors2-1.jpg'" alt="wohnzimmer">
+            <img #slideElement class="app-projects_image-project5-1" [src]="'assets/images/floors2-2.jpg'" alt="kueche">
+            <img #slideElement class="app-projects_image-project5-2" [src]="'assets/images/floors2-1.jpg'" alt="wohnzimmer">
         </div>
-        <div class="app-projects_seperation-line-5">
+        <div #slideElement class="app-projects_seperation-line-5">
         </div>
     </div>
     <app-footer></app-footer>
