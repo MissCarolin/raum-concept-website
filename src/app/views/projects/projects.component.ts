@@ -33,17 +33,6 @@ import { getMatIconFailedToSanitizeLiteralError } from '@angular/material/icon';
     animate('0.3s ease-out', style({ transform: 'translateX(100%)' }))
   ])
 ]),
-trigger('EnterLeaveSlider', [
-  state('void', style({ transform: 'translateX(0)', opacity: 0 })),
-  transition(':enter', [
-    style({transform: 'translateX(-100%)'}),
-    animate('0.5s 100ms ease-in')
-  ]),
-  transition(':leave', [
-    animate('0.3s ease-out', style({ transform: 'translateX(100%)' }))
-  ])
-])
-
 ]
 })
 export class ProjectsComponent implements AfterViewChecked {

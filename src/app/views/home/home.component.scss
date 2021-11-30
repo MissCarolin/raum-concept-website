@@ -1,201 +1,272 @@
+.app-home {
+    &_container {
+        display: flex;
+        background: linear-gradient(to right, #231F20 50%, #000000 0%);
+    }
+    &_right-side {
+        width: 50%;
+        background-color: #000000;
+        position: relative;
+    }
+    &_right-side_content-wrap {
+        height: 1000px;
+        background: black;
+    }
+    &_left-side {
+        width: 50%;
+        background-color: #231F20;
+        position: relative;
+    }
+    &_left-side_content-wrap {
+        height: 1000px;
+    }
+    &_description {
+        font-weight: 300;
+        font-size: 14px;
+        width: 16%;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 14px;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+    &_logo {
+        width: 36%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    &_link {
+        color: white;
+        text-decoration: none;
+    }
+    &_examples-project-images {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &_example {
+        width: 220px;
+        margin: auto;
+        display: flex;
+    }
+    &_separation-line {
+        border-right: 1px solid white;
+        height: 220px;
+    }
+    &_description-images {
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    &_button-leistungen {
+        margin: 0 auto;
+        display: flex;
+        margin-top: 65px;
+        margin-bottom: 65px;
+        padding: 5px 20px;
+        background-color: #2c71B9;
+        letter-spacing: 1px;
+        color: white
+    }
+    &_footer_container {
+        margin: 25px 0px 25px 25px;
+    }
+    &_footer_navigation-items {
+        color: white;
+        margin-right: 25px;
+        font-size: 14px;
+        text-decoration: none;
+        &:hover,
+        &:active {
+            padding-bottom: 10px;
+            border-bottom: 1px solid white;
+        }
+    }
+    &_footer_copyright-section {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: 12px;
+        background: black;
+    }
+    &_footer_copyright-text {
+        padding-left: 10px;
+        margin-right: 25px;
+        font-size: 14px;
+    }
+    &_footer-copyright-icon {
+        font-size: 20px;
+    }
+}
+
+// ::ng-deep .carousel-list {
+//     margin-right: 50px !important
+// }
+ ::ng-deep .mat-button-wrapper {
+    color: white
+}
+
+ ::ng-deep .mat-mini-fab.mat-accent {
+    background-color: white // transform-origin: left top !important;
+    // transform: rotate(270deg) translateX(-100%) !important;
+    // bottom: 50% !important;
+    // right: -155px !important;
+}
+
+// -------------- MEDIA QUERIES ----------------//
+// Big Screen
+@media screen and (min-width: 1900px) {
     .app-home {
-        &_container {
-            display: flex;
-            background: linear-gradient(to right, #231F20 50%, #000000 0%);
-        }
-        &_right-side {
-            width: 50%;
-            background-color: #000000;
-            position: relative;
-        }
-        &_right-side_content-wrap {
-            height: 1000px;
-            background: black;
-        }
-        &_left-side {
-            width: 50%;
-            background-color: #231F20;
-            position: relative;
-        }
-        &_left-side_content-wrap {
-            height: 1000px;
-        }
-        &_description {
-            font-weight: 300;
-            font-size: 14px;
-            width: 16%;
-            border: 1px solid white;
-            border-radius: 4px;
-            padding: 14px;
-            margin-left: 50px;
-            margin-top: 40px;
-        }
-        &_logo {
-            width: 36%;
-            display: flex;
-            margin: 0 auto;
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-        &_examples-project-images {
-            display: flex;
-            justify-content: space-evenly;
-        }
         &_example {
-            width: 220px;
-            margin: auto;
-            display: flex;
+            width: 270px;
         }
         &_separation-line {
             border-right: 1px solid white;
-            height: 220px;
+            height: 270px;
         }
-        &_description-images {
+        &_right-side {
+            height: 100vh;
+        }
+        &_right-side_content-wrap {
+            height: 100vh;
+        }
+    }
+}
+
+@media screen and (min-width:1700px) {
+    .carousel {
+        max-width: 800px;
+    }
+    .app-home {
+        &_example {
+            width: 250px;
+        }
+        &_separation-line {
+            border-right: 1px solid white;
+            height: 250px;
+        }
+    }
+}
+
+// smaller screen
+@media screen and (max-width:1500px) {
+    .app-home {
+        &_example {
+            width: 200px;
+        }
+        &_separation-line {
+            border-right: 1px solid white;
+            height: 200px;
+        }
+    }
+}
+
+@media screen and (max-width:1370px) {
+    .app-home {
+        &_example {
+            width: 180px;
+        }
+        &_separation-line {
+            border-right: 1px solid white;
+            height: 180px;
+        }
+    }
+}
+
+@media screen and (max-width:1190px) {
+    .app-home {
+        &_example {
+            width: 160px;
+        }
+        &_separation-line {
+            border-right: 1px solid white;
+            height: 160px;
+        }
+    }
+}
+
+// Smartphone 340 - ca 1040
+@media screen and (max-width:1040px) {
+     ::ng-deep .carousel {
+        margin: auto;
+    }
+    .app-home {
+        &_container {
+            display: none;
+        }
+        &_logo {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        &_description {
+            margin: auto;
+            margin-top: 45px;
+            margin-bottom: 45px;
+            width: 40%;
             text-align: center;
-            font-weight: 300;
-            letter-spacing: 1px;
-            font-size: 14px;
         }
-        &_button-leistungen {
-            margin: 0 auto;
-            display: flex;
-            margin-top: 65px;
-            margin-bottom: 65px;
-            padding: 5px 20px;
-            background-color: #2c71B9;
-            letter-spacing: 1px;
-            color: white
+        &_examples-project-images {
+            display: initial;
+        }
+        &_example {
+            width: 50%;
+        }
+        &_separation-line {
+            border-top: 1px solid white;
+            height: 0px;
+            width: 50%;
+            margin: auto;
+            margin-bottom: 5%;
         }
         &_footer_container {
-            margin: 25px 0px 25px 25px;
-        }
-        &_footer_navigation-items {
-            color: white;
-            margin-right: 25px;
-            font-size: 14px;
-            text-decoration: none;
-            &:hover,
-            &:active {
-                padding-bottom: 10px;
-                border-bottom: 1px solid white;
-            }
-        }
-        &_footer_copyright-section {
             display: flex;
             align-items: center;
-            justify-content: flex-end;
-            width: 100%;
-            margin-top: 12px;
-            background: black;
         }
-        &_footer_copyright-text {
-            padding-left: 10px;
-            margin-right: 25px;
-            font-size: 14px;
-        }
-        &_footer-copyright-icon {
-            font-size: 20px;
+        &_footer_copyright-section {
+            margin-top: 0px;
+            background-color: initial;
         }
     }
-    
-    // ::ng-deep .carousel-list {
-    //     margin-right: 50px !important
-    // }
-    // ::ng-deep .carousel-indicators {
-    //     transform-origin: left top !important;
-    //     transform: rotate(270deg) translateX(-100%) !important;
-    //     bottom: 50% !important;
-    //     right: -155px !important;
-    // }
-    // -------------- MEDIA QUERIES ----------------//
-    // Big Screen
-    @media screen and (min-width: 1900px) {
-        .app-home {
-            &_example {
-                width: 270px;
-            }
-            &_separation-line {
-                border-right: 1px solid white;
-                height: 270px;
-            }
-            &_right-side {
-                height: 100vh;
-            }
-            &_right-side_content-wrap {
-                height: 100vh;
-            }
+}
+
+@media screen and (max-width:500px) {
+    .app-home {
+        &_footer_navigation-items {
+            margin-bottom: 10px;
+        }
+        &_footer_container {
+            flex-direction: column;
+        }
+        &_footer_copyright-section {
+            justify-content: center;
         }
     }
-    
-    @media screen and (min-width:1700px) {
-        .carousel {
-            max-width: 800px;
-        }
-        .app-home {
-            &_example {
-                width: 250px;
-            }
-            &_separation-line {
-                border-right: 1px solid white;
-                height: 250px;
-            }
+}
+
+// hide smartphone Version > 1400px width
+@media screen and (min-width:1040px) {
+    .app-home_container-mobile {
+        display: none;
+    }
+}
+
+//height
+@media screen and (min-height: 830px) {
+    .app-home {
+        &_right-side {
+            height: 100vh;
         }
     }
-    
-    // smaller screen
-    @media screen and (max-width:1500px) {
-        .app-home {
-            &_example {
-                width: 200px;
-            }
-            &_separation-line {
-                border-right: 1px solid white;
-                height: 200px;
-            }
+}
+
+@media screen and (min-height: 800px) {
+    .app-home {
+        &_right-side_content-wrap,
+        &_left-side_content-wrap {
+            height: 100vh;
         }
     }
-    
-    @media screen and (max-width:1370px) {
-        .app-home {
-            &_example {
-                width: 180px;
-            }
-            &_separation-line {
-                border-right: 1px solid white;
-                height: 180px;
-            }
-        }
-    }
-    
-    @media screen and (max-width:1190px) {
-        .app-home {
-            &_example {
-                width: 160px;
-            }
-            &_separation-line {
-                border-right: 1px solid white;
-                height: 160px;
-            }
-        }
-    }
-    
-    // Smartphone
-    @media screen and (min-width:450px) {}
-    
-    //height
-    @media screen and (min-height: 830px) {
-        .app-home {
-            &_right-side {
-                height: 100vh;
-            }
-        }
-    }
-    
-    @media screen and (min-height: 800px) {
-        .app-home {
-            &_right-side_content-wrap,
-            &_left-side_content-wrap {
-                height: 100vh;
-            }
-        }
-    }
+}

@@ -4,12 +4,11 @@ import { CommonModule } from '@angular/common';
 import { ProjectsComponent } from './projects.component';
 import { AppProjectsRoutingModule } from './projects.routing.module';
 import { AppHeaderModule } from 'src/app/shared/components/header/header.module';
-import { AppearDirective } from 'src/app/shared/directives/appear-on-scroll.directive';
 
 
 
 @NgModule({
-  declarations: [ProjectsComponent, AppearDirective],
+  declarations: [ProjectsComponent],
   exports: [ProjectsComponent],
   imports: [AppHeaderModule, AppFooterModule, CommonModule, AppProjectsRoutingModule]
 })

@@ -5,7 +5,7 @@
                 <app-header></app-header>
                 <mat-carousel class="app-home_carousel-dots-arrows" timings="250ms ease-in" [autoplay]="true" interval="6000" color="accent" maxWidth="500px" proportion="140" slides="5" [loop]="true" [hideArrows]="false" [hideIndicators]="false" [useKeyboard]="true"
                     [useMouseWheel]="false" orientation="ltr">
-                    <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index" [image]="slide.image" overlayColor="#00000040" [hideOverlay]="false"></mat-carousel-slide>
+                    <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index" [image]="slide.image" overlayColor="#00000000" [hideOverlay]="false"></mat-carousel-slide>
                 </mat-carousel>
             </div>
         </div>
@@ -19,19 +19,25 @@
             <p class="app-home_description">we build, renovate and xxxxxxx add text what you do</p>
             <img class="app-home_logo" [src]="'assets/images/logoRc.png'" alt="logo">
             <div class="app-home_examples-project-images">
+                <a class="app-home_link" [routerLink]="['/projects']" fragment="kitchen">
+                    <div>
+                        <img @ImageSliderEnter1 class="app-home_example" [src]="'assets/images/kitchen.png'" alt="kitchen">
+                        <p class="app-home_description-images">Küche</p>
+                    </div>
+                </a>
+                <div class="app-home_separation-line"></div>
                 <div>
-                    <img class="app-home_example" [src]="'assets/images/kitchen.png'" alt="kitchen">
-                    <p class="app-home_description-images">Küche</p>
+                    <a class="app-home_link" [routerLink]="['/projects']" fragment="bathroom">
+                        <img @ImageSliderEnter2 class="app-home_example" [src]="'assets/images/bathroom.png'" alt="bathroom">
+                        <p class="app-home_description-images">Badezimmer</p>
+                    </a>
                 </div>
                 <div class="app-home_separation-line"></div>
                 <div>
-                    <img class="app-home_example" [src]="'assets/images/bathroom.png'" alt="bathroom">
-                    <p class="app-home_description-images">Badezimmer</p>
-                </div>
-                <div class="app-home_separation-line"></div>
-                <div>
-                    <img class="app-home_example" [src]="'assets/images/floors.png'" alt="floors">
-                    <p class="app-home_description-images">Boden</p>
+                    <a class="app-home_link" [routerLink]="['/projects']" fragment="floors">
+                        <img @ImageSliderEnter3 class="app-home_example" [src]="'assets/images/floors.png'" alt="floors">
+                        <p class="app-home_description-images">Boden</p>
+                    </a>
                 </div>
             </div>
             <button class="app-home_button-leistungen" type="button" mat-raised-button> UNSERE LEISTUNGEN
@@ -43,3 +49,51 @@
         </div>
     </div>
 </div>
+
+<!-- mobile home screen -->
+<div class="app-home_container-mobile">
+    <div class="app-home_content-wrap">
+        <div class="app-home_header">
+            <app-header></app-header>
+            <img class="app-home_logo" [src]="'assets/images/logoRc.png'" alt="logo">
+        </div>
+        <div class="app-home_carousel-container">
+            <mat-carousel class="app-home_carousel-dots-arrows" timings="250ms ease-in" [autoplay]="true" interval="6000" color="accent" maxWidth="500px" proportion="140" slides="5" [loop]="true" [hideArrows]="false" [hideIndicators]="false" [useKeyboard]="true"
+                [useMouseWheel]="false" orientation="ltr">
+                <mat-carousel-slide class="app-home_carousel-slide" #matCarouselSlide *ngFor="let slide of slides; let i = index" [image]="slide.image" overlayColor="#00000000" [hideOverlay]="false"></mat-carousel-slide>
+            </mat-carousel>
+        </div>
+        <p class="app-home_description">we build, renovate and xxxxxxx add text what you do</p>
+        <div class="app-home_examples-project-images">
+            <a class="app-home_link" [routerLink]="['/projects']" fragment="kitchen">
+                <div>
+                    <img @ImageSliderEnter1 class="app-home_example" [src]="'assets/images/kitchen.png'" alt="kitchen">
+                    <p class="app-home_description-images">Küche</p>
+                </div>
+            </a>
+            <div class="app-home_separation-line"></div>
+            <div>
+                <a class="app-home_link" [routerLink]="['/projects']" fragment="bathroom">
+                    <img @ImageSliderEnter2 class="app-home_example" [src]="'assets/images/bathroom.png'" alt="bathroom">
+                    <p class="app-home_description-images">Badezimmer</p>
+                </a>
+            </div>
+            <div class="app-home_separation-line"></div>
+            <div>
+                <a class="app-home_link" [routerLink]="['/projects']" fragment="floors">
+                    <img @ImageSliderEnter3 class="app-home_example" [src]="'assets/images/floors.png'" alt="floors">
+                    <p class="app-home_description-images">Boden</p>
+                </a>
+            </div>
+        </div>
+        <button class="app-home_button-leistungen" type="button" mat-raised-button> UNSERE LEISTUNGEN
+        </button>
+        <div class="app-home_footer_container">
+            <a class="app-home_footer_navigation-items" routerLink="/services">IMPRESSUM</a>
+            <a class="app-home_footer_navigation-items" routerLink="/projects">DATENSCHUTZ</a>
+            <div class="app-home_footer_copyright-section">
+                <span class="material-icons app-home_footer-copyright-icon">copyright</span>
+                <p class="app-home_footer_copyright-text">EE Raumconcept GmbH 2021</p>
+            </div>
+        </div>
+    </div>

@@ -24,3 +24,12 @@
         font-size: 27px;
     }
 }
+
+@media screen and (max-width:1040px) {
+    .app-header {
+        &_container {
+            justify-content: center;
+            margin-bottom: 0px;
+        }
+    }
+}
