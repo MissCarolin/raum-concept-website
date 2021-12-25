@@ -1,3 +1,4 @@
+import { AppContactModule } from './../contact/contact.module';
 import { AppHeaderModule } from 'src/app/shared/components/header/header.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
