@@ -1,0 +1,24 @@
+.app-impressum {
+    &_container {
+        width: 93%;
+        margin: 0px auto;
+        max-width: 1430px;
+        min-height: 93vh;
+    }
+    &_content {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: 25px;
+    }
+    &_headline {
+        font-size: 23px;
+        margin-bottom: 40px;
+    }
+    &_links {
+        text-decoration: none;
+        color: inherit;
+    }
+    &_webdesign-headline {
+        margin: 0px
+    }
+}

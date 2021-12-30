@@ -1,6 +1,5 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { AfterContentChecked, AfterViewChecked, AfterViewInit, ChangeDetectorRef, Component, ElementRef, HostListener, OnInit, QueryList, Renderer2, ViewChild, ViewChildren } from '@angular/core';
-import { getMatIconFailedToSanitizeLiteralError } from '@angular/material/icon';
+import {AfterViewChecked, Component, ElementRef, HostListener, QueryList, Renderer2, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-projects',

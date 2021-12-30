@@ -88,7 +88,6 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        width: 100%;
         margin-top: 12px;
         background: black;
     }
@@ -102,18 +101,12 @@
     }
 }
 
-// ::ng-deep .carousel-list {
-//     margin-right: 50px !important
-// }
  ::ng-deep .mat-button-wrapper {
     color: white
 }
 
  ::ng-deep .mat-mini-fab.mat-accent {
-    background-color: white // transform-origin: left top !important;
-    // transform: rotate(270deg) translateX(-100%) !important;
-    // bottom: 50% !important;
-    // right: -155px !important;
+    background-color: white
 }
 
 // -------------- MEDIA QUERIES ----------------//
@@ -224,6 +217,7 @@
         &_footer_container {
             display: flex;
             align-items: center;
+            justify-content: space-between;
         }
         &_footer_copyright-section {
             margin-top: 0px;

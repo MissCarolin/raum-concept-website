@@ -42,18 +42,27 @@
                     width: 267px;
                     top: 304px;
                     left: 469px;
+                    &_mobile-version {
+                        display: none
+                    }
                 }
                 &_image-project1-3 {
                     position: absolute;
                     width: 267px;
                     left: 469px;
                     top: 688px;
+                    &_mobile-version {
+                        display: none
+                    }
                 }
                 &_image-project1-4 {
                     position: absolute;
                     width: 499px;
                     top: 302px;
                     right: 84px;
+                    &_mobile-version {
+                        display: none
+                    }
                 }
                 &_seperation-line-1 {
                     position: absolute;
@@ -394,6 +403,383 @@
                         top: 4612px;
                         left: 6%;
                         transform: translateX(0)
+                    }
+                }
+            }
+
+            // -------------- MEDIA QUERIES ----------------//
+            //smaller screen
+            @media screen and (max-width:1450px) {
+                .app-projects {
+                    &_headline {
+                        position: absolute;
+                        right: 318px;
+                        top: 100px;
+                    }
+                    &_image-project1-2 {
+                        display: none;
+                        &_mobile-version {
+                            display: none
+                        }
+                    }
+                    &_image-project1-3 {
+                        &_mobile-version {
+                            display: none
+                        }
+                    }
+                    &_image-project1-4 {
+                        &_mobile-version {
+                            display: none
+                        }
+                    }
+                    &_image-project2-1.active {
+                        left: 490px;
+                    }
+                    &_image-project2-2.active {
+                        left: 6%;
+                    }
+                    &_image-project1-3 {
+                        display: none;
+                    }
+                    &_image-project3-3.active {
+                        display: none
+                    }
+                    &_description-box-4.active {
+                        left: 710px
+                    }
+                    &_image-project4-1.active {
+                        left: 6%;
+                    }
+                    &_image-project4-2.active {
+                        display: none;
+                    }
+                    &_image-project4-3.active {
+                        right: 162px;
+                    }
+                    &_image-project5-1.active {
+                        left: 582px;
+                    }
+                    &_image-project5-2.active {
+                        left: 6%;
+                    }
+                }
+            }
+
+            @media screen and (max-width:1040px) {
+                .description-box {
+                    position: initial;
+                    width: 100%;
+                    margin: 0 auto;
+                    width: 150px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    &.active {
+                        position: initial;
+                        width: 100%;
+                        margin: 0 auto;
+                        width: 150px;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                    }
+                }
+                .app-projects {
+                    &_container {
+                        width: 93%;
+                        margin: 0 auto;
+                        min-height: 93vh;
+                    }
+                    &_content-wrap {
+                        height: initial;
+                    }
+                    &_headline {
+                        text-align: center;
+                        position: initial;
+                        margin-top: 70px
+                    }
+                    &_description-box-1 {
+                        font-size: 14px;
+                        max-width: 150px;
+                        position: inherit;
+                        top: 297px;
+                        left: 6%;
+                    }
+                    &_description-box {
+                        &-headline {
+                            text-align: center;
+                        }
+                        &-description {
+                            text-align: center;
+                        }
+                    }
+                    &_project {
+                        &-1 {
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 10px;
+                        }
+                        &-2 {
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 10px;
+                        }
+                        &-3 {
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 10px;
+                        }
+                        &-4 {
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 10px;
+                        }
+                        &-5 {
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    &_image-project1-1 {
+                        position: initial;
+                        margin: 0px auto;
+                        width: 60%;
+                        margin-bottom: 30px
+                    }
+                    &_image-project1-2 {
+                        display: none;
+                        &_mobile-version {
+                            display: initial;
+                            margin: 0px auto;
+                            width: 60%;
+                            margin-bottom: 30px;
+                            transition: all 1.3s;
+                            transform: translateX(-300%);
+                            &.active {
+                                position: initial;
+                                width: 60%;
+                                margin: 0 auto;
+                                opacity: 1;
+                                transform: translateX(0);
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                    &_image-project1-3 {
+                        display: none;
+                        &_mobile-version {
+                            display: initial;
+                            margin: 0px auto;
+                            width: 60%;
+                            margin-bottom: 30px;
+                            transition: all 1.3s;
+                            transform: translateX(-300%);
+                            &.active {
+                                position: initial;
+                                width: 60%;
+                                margin: 0 auto;
+                                opacity: 1;
+                                transform: translateX(0);
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                    &_image-project1-4 {
+                        display: none;
+                        &_mobile-version {
+                            display: initial;
+                            margin: 0px auto;
+                            width: 60%;
+                            margin-bottom: 30px;
+                            transition: all 1.3s;
+                            transform: translateX(-300%);
+                            &.active {
+                                position: initial;
+                                width: 60%;
+                                margin: 0 auto;
+                                opacity: 1;
+                                transform: translateX(0);
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                    &_seperation-line-1 {
+                        position: initial;
+                        width: 65%;
+                        margin: 0 auto;
+                        &.active {
+                            position: initial;
+                            width: 65%;
+                            margin: 0 auto;
+                        }
+                    }
+                    &_image-project2-1 {
+                        position: initial;
+                        margin: 0px auto;
+                        width: 60%;
+                        margin-bottom: 30px;
+                        &.active {
+                            display: initial;
+                            position: initial;
+                            margin: 0px auto;
+                            width: 60%;
+                            margin-bottom: 30px
+                        }
+                    }
+                    &_image-project2-2 {
+                        position: initial;
+                        margin: 0px auto;
+                        width: 60%;
+                        margin-bottom: 30px;
+                        &.active {
+                            display: initial;
+                            position: initial;
+                            margin: 0px auto;
+                            width: 60%;
+                            margin-bottom: 30px
+                        }
+                    }
+                    &_seperation-line-2 {
+                        position: initial;
+                        width: 65%;
+                        margin: 0 auto;
+                        &.active {
+                            position: initial;
+                            width: 65%;
+                            margin: 0 auto;
+                        }
+                    }
+                    &_image-project3-1 {
+                        position: initial;
+                        margin: 0px auto;
+                        width: 60%;
+                        margin-bottom: 30px;
+                        &.active {
+                            display: initial;
+                            position: initial;
+                            margin: 0px auto;
+                            width: 60%;
+                            margin-bottom: 30px
+                        }
+                    }
+                    &_image-project3-2 {
+                        position: initial;
+                        margin: 0px auto;
+                        width: 60%;
+                        margin-bottom: 30px;
+                        &.active {
+                            display: initial;
+                            position: initial;
+                            margin: 0px auto;
+                            width: 60%;
+                            margin-bottom: 30px
+                        }
+                    }
+                    &_image-project3-3 {
+                        position: initial;
+                        margin: 0px auto;
+                        width: 60%;
+                        margin-bottom: 30px;
+                        &.active {
+                            display: initial;
+                            position: initial;
+                            margin: 0px auto;
+                            width: 60%;
+                            margin-bottom: 30px
+                        }
+                    }
+                    &_seperation-line-3 {
+                        position: initial;
+                        width: 65%;
+                        margin: 0 auto;
+                        &.active {
+                            position: initial;
+                            width: 65%;
+                            margin: 0 auto;
+                        }
+                    }
+                    &_image-project4-1 {
+                        position: initial;
+                        margin: 0px auto;
+                        width: 60%;
+                        margin-bottom: 30px;
+                        &.active {
+                            display: initial;
+                            position: initial;
+                            margin: 0px auto;
+                            width: 60%;
+                            margin-bottom: 30px;
+                        }
+                    }
+                    &_image-project4-2 {
+                        position: initial;
+                        margin: 0px auto;
+                        width: 60%;
+                        margin-bottom: 30px;
+                        &.active {
+                            display: initial;
+                            position: initial;
+                            margin: 0px auto;
+                            width: 60%;
+                            margin-bottom: 30px;
+                        }
+                    }
+                    &_image-project4-3 {
+                        position: initial;
+                        margin: 0px auto;
+                        width: 60%;
+                        margin-bottom: 30px;
+                        &.active {
+                            display: initial;
+                            position: initial;
+                            margin: 0px auto;
+                            width: 60%;
+                            margin-bottom: 30px;
+                        }
+                    }
+                    &_seperation-line-4 {
+                        position: initial;
+                        width: 65%;
+                        margin: 0 auto;
+                        &.active {
+                            position: initial;
+                            width: 65%;
+                            margin: 0 auto;
+                        }
+                    }
+                    &_image-project5-1 {
+                        position: initial;
+                        margin: 0px auto;
+                        width: 60%;
+                        margin-bottom: 30px;
+                        &.active {
+                            display: initial;
+                            position: initial;
+                            margin: 0px auto;
+                            width: 60%;
+                            margin-bottom: 30px;
+                        }
+                    }
+                    &_image-project5-2 {
+                        position: initial;
+                        margin: 0px auto;
+                        width: 60%;
+                        margin-bottom: 30px;
+                        &.active {
+                            display: initial;
+                            position: initial;
+                            margin: 0px auto;
+                            width: 60%;
+                            margin-bottom: 30px;
+                        }
+                    }
+                    &_seperation-line-5 {
+                        position: initial;
+                        width: 65%;
+                        margin: 0 auto;
+                        &.active {
+                            position: initial;
+                            width: 65%;
+                            margin: 0 auto;
+                        }
                     }
                 }
             }

@@ -1,0 +1,67 @@
+    .app-contact {
+        &_container {
+            width: 93%;
+            margin: 0 auto;
+            max-width: 1430px;
+        }
+        &_content-wrap {
+            margin: 100px 25px;
+            min-height: 93vh;
+        }
+        &_headline {
+            font-size: 23px;
+            padding-left: 150px
+        }
+        &_content {
+            display: flex;
+            justify-content: center;
+            margin-top: 65px;
+            &-text {
+                margin-right: 154px;
+                margin-top: 96px;
+            }
+        }
+    }
+
+    // -------------- MEDIA QUERIES ----------------//
+    // Smartphone 340 - ca 1040
+    @media screen and (max-width: 870px) {
+        .app-contact {
+            &_content-text {
+                margin-right: 30px;
+                margin-top: 75px;
+            }
+            &_image {
+                width: 300px
+            }
+        }
+    }
+
+    @media screen and (max-width:530px) {
+        .app-contact {
+            &_content-text {
+                margin-right: 15px;
+                margin-top: 65px;
+            }
+            &_image {
+                width: 200px
+            }
+        }
+        @media screen and (max-width:430px) {
+            .app-contact {
+                &_content {
+                    display: flex;
+                    flex-flow: wrap;
+                    justify-content: center;
+                    &-text {
+                        margin: 0px;
+                        text-align: center;
+                    }
+                }
+                &_headline {
+                    text-align: center;
+                    padding: 0px;
+                }
+            }
+        }
+    }

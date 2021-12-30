@@ -10,8 +10,7 @@
             </div>
         </div>
         <div class="app-home_footer_container">
-            <a class="app-home_footer_navigation-items" routerLink="/impressum">IMPRESSUM</a>
-            <a class="app-home_footer_navigation-items" routerLink="/datenschutz">DATENSCHUTZ</a>
+            <a class="app-home_footer_navigation-items" [routerLink]="['/impressum']" fragment="impressum">IMPRESSUM & DATENSCHUTZ</a>
         </div>
     </div>
     <div class="app-home_right-side">
@@ -22,25 +21,25 @@
                 <a class="app-home_link" [routerLink]="['/projects']" fragment="kitchen">
                     <div>
                         <img @ImageSliderEnter1 class="app-home_example" [src]="'assets/images/kitchen.png'" alt="kitchen">
-                        <p class="app-home_description-images">Küche</p>
+                        <p class="app-home_description-images">Kitchen</p>
                     </div>
                 </a>
                 <div class="app-home_separation-line"></div>
                 <div>
                     <a class="app-home_link" [routerLink]="['/projects']" fragment="bathroom">
                         <img @ImageSliderEnter2 class="app-home_example" [src]="'assets/images/bathroom.png'" alt="bathroom">
-                        <p class="app-home_description-images">Badezimmer</p>
+                        <p class="app-home_description-images">Bathroom</p>
                     </a>
                 </div>
                 <div class="app-home_separation-line"></div>
                 <div>
                     <a class="app-home_link" [routerLink]="['/projects']" fragment="floors">
                         <img @ImageSliderEnter3 class="app-home_example" [src]="'assets/images/floors.png'" alt="floors">
-                        <p class="app-home_description-images">Boden</p>
+                        <p class="app-home_description-images">Floors</p>
                     </a>
                 </div>
             </div>
-            <button class="app-home_button-services" type="button" mat-raised-button> OUR SERVICES
+            <button class="app-home_button-services" type="button" routerLink="/services" mat-raised-button> OUR SERVICES
         </button>
         </div>
         <div class="app-home_footer_copyright-section">
@@ -63,7 +62,7 @@
                 <mat-carousel-slide class="app-home_carousel-slide" #matCarouselSlide *ngFor="let slide of slides; let i = index" [image]="slide.image" overlayColor="#00000000" [hideOverlay]="false"></mat-carousel-slide>
             </mat-carousel>
         </div>
-        <p class="app-home_description">we build, renovate and xxxxxxx add text what you do</p>
+        <p class="app-home_description">Berlin-based Full Service Renovations and Home Repairs in English, German, Russian</p>
         <div class="app-home_examples-project-images">
             <a class="app-home_link" [routerLink]="['/projects']" fragment="kitchen">
                 <div>
@@ -86,11 +85,10 @@
                 </a>
             </div>
         </div>
-        <button class="app-home_button-services" type="button" mat-raised-button> OUR SERVICES
+        <button class="app-home_button-services" type="button" [routerLink]="['/services']" fragment="services" mat-raised-button> OUR SERVICES
         </button>
         <div class="app-home_footer_container">
-            <a class="app-home_footer_navigation-items" routerLink="/impressum">IMPRESSUM</a>
-            <a class="app-home_footer_navigation-items" routerLink="/datenschutz">DATENSCHUTZ</a>
+            <a class="app-home_footer_navigation-items" [routerLink]="['/impressum']" fragment="impressum">IMPRESSUM & DATENSCHUTZ</a>
             <div class="app-home_footer_copyright-section">
                 <span class="material-icons app-home_footer-copyright-icon">copyright</span>
                 <p class="app-home_footer_copyright-text">EE Raumconcept GmbH 2021</p>

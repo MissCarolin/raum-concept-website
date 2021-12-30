@@ -1,10 +1,10 @@
 <div class="app-projects_container">
     <div class="app-projects_content-wrap">
         <app-header></app-header>
-        <h3 @EnterLeaveHeadline class="app-projects_headline">PROJEKTE</h3>
+        <h3 @EnterLeaveHeadline class="app-projects_headline">PROJECTS</h3>
 
-        <div class="app-project_project-1">
-            <div id="bathroom" @EnterLeaveProject1 class="app-projects_description-box-1">
+        <div class="app-projects_project-1">
+            <div id="bathroom" @EnterLeaveProject1 class="app-projects_description-box-1 description-box ">
                 <h3 class="app-projects_description-box-headline">FULL BATHROOM</h3>
                 <p class="app-projects_description-box-description">interior design consultation | room extension | tiling | bathroom installation </p>
             </div>
@@ -12,12 +12,15 @@
             <img @EnterLeaveProject1 class="app-projects_image-project1-2" [src]="'assets/images/bad2.jpg'" alt="bad">
             <img @EnterLeaveProject1 class="app-projects_image-project1-3" [src]="'assets/images/bad3.jpg'" alt="bad">
             <img @EnterLeaveProject1 class="app-projects_image-project1-4" [src]="'assets/images/bad4.jpg'" alt="bad">
+            <img #slideElement class="app-projects_image-project1-2_mobile-version" [src]="'assets/images/bad2.jpg'" alt="bad">
+            <img #slideElement class="app-projects_image-project1-3_mobile-version" [src]="'assets/images/bad3.jpg'" alt="bad">
+            <img #slideElement class="app-projects_image-project1-4_mobile-version" [src]="'assets/images/bad4.jpg'" alt="bad">
         </div>
         <div #slideElement class="app-projects_seperation-line-1">
         </div>
 
-        <div class="app-project_project-2">
-            <div #slideElement class="app-projects_description-box-2">
+        <div class="app-projects_project-2">
+            <div #slideElement class="app-projects_description-box-2 description-box">
                 <h3 class="app-projects_description-box-headline">ATTIC BATHROOM</h3>
                 <p class="app-projects_description-box-description">exposed beams | bathroom installation | painting | tiling | plumbing</p>
             </div>
@@ -27,8 +30,8 @@
         <div #slideElement class="app-projects_seperation-line-2">
         </div>
 
-        <div class="app-project_project-3">
-            <div id="kitchen" #slideElement class="app-projects_description-box-3">
+        <div class="app-projects_project-3">
+            <div id="kitchen" #slideElement class="app-projects_description-box-3 description-box">
                 <h3 class="app-projects_description-box-headline">SMALL SPACE SOLUTION</h3>
                 <p class="app-projects_description-box-description">reimagining desing | demolition | dry wall installation | plumbing | electrical | tiling</p>
             </div>
@@ -39,8 +42,8 @@
         <div #slideElement class="app-projects_seperation-line-3">
         </div>
 
-        <div class="app-project_project-4">
-            <div #slideElement class="app-projects_description-box-4">
+        <div class="app-projects_project-4">
+            <div #slideElement class="app-projects_description-box-4 description-box">
                 <h3 class="app-projects_description-box-headline">OPEN SPACE RENOVATION</h3>
                 <p class="app-projects_description-box-description">herringbone flooring | underfloor heating | new windows installation | full kitchen renovation | skylight installation | lighting</p>
             </div>
@@ -51,8 +54,8 @@
         <div #slideElement class="app-projects_seperation-line-4">
         </div>
 
-        <div class="app-project_project-5">
-            <div id="floors" #slideElement class="app-projects_description-box-5">
+        <div class="app-projects_project-5">
+            <div id="floors" #slideElement class="app-projects_description-box-5 description-box">
                 <h3 class="app-projects_description-box-headline">NATURAL WOOD FLOORING</h3>
                 <p class="app-projects_description-box-description">sanding | oiling and polishing | painting | drywall repairs | electrical</p>
             </div>

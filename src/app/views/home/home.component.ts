@@ -1,5 +1,5 @@
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { AfterViewChecked, Component, ElementRef, HostListener, OnInit, QueryList, Renderer2, ViewChildren, ViewEncapsulation } from '@angular/core';
 
 
 @Component({
@@ -41,7 +41,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   ]
 })
 
-export class HomeComponent {
+export class HomeComponent implements AfterViewChecked {
+
+
+  @ViewChildren('slideElement') elRef: QueryList<ElementRef>;
 
  slides = [
       {image: 'assets/images/bad4.jpg'},
@@ -50,6 +53,23 @@ export class HomeComponent {
       {image: 'assets/images/floors2-2.jpg'},
       {image: 'assets/images/bad2-2.jpg'},
     ];
+
+  constructor(private renderer: Renderer2) { }
+
+
+  @HostListener('window:scroll')
+
+  ngAfterViewChecked(): void {
+  this.elRef.map(picture => {
+      console.log('picture', picture);
+      const slideInAt = (window.scrollY + window.innerHeight) - picture.nativeElement.offsetHeight / 2;
+      const isHalfShown = slideInAt > picture.nativeElement.offsetTop;
+      if (isHalfShown) {
+      this.renderer.addClass(picture.nativeElement, 'active');
+    }
+    });
+  }
+
 
 
 }

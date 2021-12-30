@@ -1,0 +1,138 @@
+.app-services {
+    &_container {
+        width: 93%;
+        margin: 0 auto;
+        max-width: 1430px;
+    }
+    &_content-wrap {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+        min-height: 93vh;
+    }
+    &_headline {
+        font-size: 23px;
+        padding-left: 150px
+    }
+    &_subheadline {
+        border-bottom: 1px solid #2c71B9;
+        width: fit-content;
+        padding-bottom: 10px;
+    }
+    &_content {
+        margin-top: 105px
+    }
+    &_content_pt1 {
+        display: flex;
+        &_text {
+            letter-spacing: 1px;
+        }
+    }
+    &_separation-line {
+        margin: 0px 40px;
+    }
+    &_separation-line-visible {
+        margin: 0px 10px;
+        border-left: 1px solid #2c71B9;
+        height: 17px
+    }
+    &_headline-pt2 {
+        margin-right: 19px;
+        border-bottom: 2px solid #2c71B9;
+        font-size: 17px;
+        margin-top: 0px;
+        margin-bottom: 7px;
+    }
+    &_content_pt2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        transition: all 1.3s;
+        opacity: 0;
+        transform: translateY(40%);
+        &.active {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 100px;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        &-text {
+            margin-top: 0px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+    }
+    &_images {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 85px;
+        &-example {
+            width: 650px
+        }
+    }
+}
+
+// -------------- MEDIA QUERIES ----------------//
+//smaller Screen
+@media screen and (max-width:1465px) {
+    .app-services {
+        &_images-example {
+            width: 100%;
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:1290px) {
+    .app-services {
+        &_content_pt1 {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            &_text {
+                width: 500px
+            }
+        }
+        &_images {
+            flex-direction: column;
+            align-items: center;
+            &-example {
+                margin: 20px 0px;
+            }
+        }
+        &_content_pt2.active {
+            justify-content: center;
+        }
+    }
+}
+
+// Smartphone 340 - ca 1040
+@media screen and (max-width:580px) {
+    .app-services {
+        &_headline {
+            padding-left: 70px;
+        }
+        &_content {
+            margin-top: 80px;
+            &_pt1_text {
+                width: 350px;
+            }
+        }
+        &_content_pt2.active {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .app-services {
+        &_content_pt1_text {
+            width: 100%;
+        }
+        &_content_pt2.active {
+            justify-content: center;
+        }
+    }
+}
