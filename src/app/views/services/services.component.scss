@@ -2,7 +2,7 @@
     &_container {
         width: 93%;
         margin: 0 auto;
-        max-width: 1430px;
+        max-width: 1380px;
     }
     &_content-wrap {
         margin-left: 25px;
@@ -12,10 +12,11 @@
         min-height: 93vh;
     }
     &_headline {
-        font-size: 23px;
+        font-size: 20px;
         padding-left: 150px
     }
     &_subheadline {
+        font-size: 15px;
         border-bottom: 1px solid #2c71B9;
         width: fit-content;
         padding-bottom: 10px;
@@ -27,6 +28,8 @@
         display: flex;
         &_text {
             letter-spacing: 1px;
+            font-size: 13.5px;
+            font-weight: lighter;
         }
     }
     &_separation-line {
@@ -38,13 +41,14 @@
         height: 17px
     }
     &_headline-pt2 {
+        font-size: 15px;
         margin-right: 19px;
         border-bottom: 2px solid #2c71B9;
-        font-size: 17px;
         margin-top: 0px;
         margin-bottom: 7px;
     }
     &_content_pt2 {
+        font-weight: lighter;
         display: flex;
         flex-wrap: wrap;
         margin-top: 100px;
@@ -59,6 +63,7 @@
             transform: translateY(0);
         }
         &-text {
+            font-size: 13.5px;
             margin-top: 0px;
             margin-bottom: 15px;
             letter-spacing: 1px;
@@ -69,23 +74,23 @@
         justify-content: space-between;
         margin-top: 85px;
         &-example {
-            width: 650px
+            width: 600px
         }
     }
 }
 
 // -------------- MEDIA QUERIES ----------------//
 //smaller Screen
-@media screen and (max-width:1465px) {
+@media screen and (max-width:1350px) {
     .app-services {
         &_images-example {
-            width: 100%;
+            width: 70%;
             margin-right: 20px;
         }
     }
 }
 
-@media screen and (max-width:1290px) {
+@media screen and (max-width:1280px) {
     .app-services {
         &_content_pt1 {
             display: flex;
@@ -122,6 +127,14 @@
         }
         &_content_pt2.active {
             justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .app-services {
+        &_images-example {
+            width: 100%;
         }
     }
 }

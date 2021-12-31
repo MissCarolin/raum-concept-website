@@ -2,14 +2,14 @@
         &_container {
             width: 93%;
             margin: 0 auto;
-            max-width: 1430px;
+            max-width: 1380px;
         }
         &_content-wrap {
             margin: 100px 25px;
             min-height: 93vh;
         }
         &_headline {
-            font-size: 23px;
+            font-size: 20px;
             padding-left: 150px
         }
         &_content {
@@ -19,7 +19,11 @@
             &-text {
                 margin-right: 154px;
                 margin-top: 96px;
+                font-size: 13.5px
             }
+        }
+        &_image {
+            width: 420px
         }
     }
 
