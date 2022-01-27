@@ -171,6 +171,22 @@
     }
 }
 
+@media screen and (max-width:1350px) {
+    .app-home {
+        &_description {
+            width: 20%;
+        }
+    }
+}
+
+@media screen and (max-width:1212px) {
+    .app-home {
+        &_description {
+            width: 24%;
+        }
+    }
+}
+
 @media screen and (max-width:1190px) {
     .app-home {
         &_example {
